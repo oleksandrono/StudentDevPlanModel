@@ -11,14 +11,16 @@ public class Student {
     private String name;
     private Knowledge knowledge;
     private double learningRatio;
+    private boolean laptop;
     private Schedule schedule;
     private List<Schedule> schedules = new ArrayList<>();
     private DevelopmentPlan devPlan;
 
-    public Student(String name, Knowledge knowledge, double learningRatio){
+    public Student(String name, Knowledge knowledge, double learningRatio, boolean laptop){
         this.name = name;
         this.knowledge = knowledge;
         this.learningRatio = learningRatio;
+        this.laptop = laptop;
     }
 
 
@@ -35,10 +37,10 @@ public class Student {
         this.devPlan=devPlan;
     }
 
-    public void useDevPlan(){
-        //some check
-        // learn();
+    public boolean hasLaptop(){
+        return laptop;
     }
+
 
 
     public Knowledge getKnowledge(){

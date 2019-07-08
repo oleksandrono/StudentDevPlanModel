@@ -15,7 +15,7 @@ public class Holidays implements Schedule {
 
     @Override
     public boolean isActive(LocalDate date) {
-        return !date.isAfter(holidaysStart) && !date.isBefore(holidaysEnd);
+        return !date.isBefore(holidaysEnd) || !date.isAfter(holidaysStart);
 
     }
 }

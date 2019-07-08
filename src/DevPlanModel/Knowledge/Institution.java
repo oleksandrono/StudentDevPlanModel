@@ -25,11 +25,12 @@ public class Institution implements KnowledgeSource {
     //______________________ not implemented
     @Override
     public void educate(Student student) {
-        if(institutionType == InstitutionType.University){
-            student.learn(knowledge);
-        }
-        else if(institutionType == InstitutionType.Internship){
-            student.learn(knowledge);
+        if(students.contains(student)) {
+            if (institutionType == InstitutionType.University) {
+                student.learn(knowledge);
+            } else if (institutionType == InstitutionType.Internship) {
+                student.learn(knowledge);
+            }
         }
     }
 }

@@ -11,19 +11,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Student student1 = new Student("Sasha", (new Knowledge(0, 0)), 0.8);
-        Student student2 = new Student("Vasya", (new Knowledge(0, 0)), 0.5);
-        Student student3 = new Student("Petya", (new Knowledge(0, 0)), 0.9);
-        Student student4 = new Student("Vanya", (new Knowledge(0, 0)), 0.7);
+        Student student1 = new Student("Sasha", (new Knowledge(0, 0)), 0.8, true);
+        Student student2 = new Student("Vasya", (new Knowledge(0, 0)), 0.5, false);
+        Student student3 = new Student("Petya", (new Knowledge(0, 0)), 0.9, true);
+        Student student4 = new Student("Vanya", (new Knowledge(0, 0)), 0.7, false);
 
 
         ArrayList<Schedule> schedulesUniversity = new ArrayList<>();
         schedulesUniversity.add(new Period(LocalDate.of(2015, 9, 1), LocalDate.of(2020, 5, 30)));
         schedulesUniversity.add(new Workdays());
-//        schedulesUniversity.add(new Holidays(LocalDate.of(2016, 6, 1), LocalDate.of(2016, 8, 30)));
-//        schedulesUniversity.add(new Holidays(LocalDate.of(2017, 6, 1), LocalDate.of(2017, 8, 30)));
-//        schedulesUniversity.add(new Holidays(LocalDate.of(2018, 6, 1), LocalDate.of(2018, 8, 30)));
-//        schedulesUniversity.add(new Holidays(LocalDate.of(2019, 6, 1), LocalDate.of(2019, 8, 30)));
+        schedulesUniversity.add(new Holidays(LocalDate.of(2016, 6, 1), LocalDate.of(2016, 8, 30)));
+        schedulesUniversity.add(new Holidays(LocalDate.of(2017, 6, 1), LocalDate.of(2017, 8, 30)));
+        schedulesUniversity.add(new Holidays(LocalDate.of(2018, 6, 1), LocalDate.of(2018, 8, 30)));
+        schedulesUniversity.add(new Holidays(LocalDate.of(2019, 6, 1), LocalDate.of(2019, 8, 30)));
 
         ArrayList<Schedule> schedulesUniversity2 = new ArrayList<>();
         schedulesUniversity2.add(new Period(LocalDate.of(2020, 9, 1), LocalDate.of(2022, 5, 30)));
@@ -56,7 +56,7 @@ public class Main {
 
         //student 2 - self education
         DevelopmentPlan devPlan2 = new DevelopmentPlan(student2);
-        Activity activity2_1 = new Activity((new Meetup(new Knowledge(0, 2))), schedulesMeetup);
+        Activity activity2_1 = new Activity((new Meetup(new Knowledge(0, 2), true)), schedulesMeetup);
         Activity activity2_2 = new Activity(new SelfEducation(new Knowledge(2, 2)), schedulesSelfEducation);
         Activity activity2_3 = new Activity(new Institution(InstitutionType.Internship, new Knowledge(5, 2)), schedulesInternship);
 
@@ -73,7 +73,7 @@ public class Main {
 
         DevelopmentPlan devPlan3 = new DevelopmentPlan(student3);
         Activity activity3_1 = new Activity(new Institution(InstitutionType.University, new Knowledge(2, 3)), schedulesUniversity);
-        Activity activity3_2 = new Activity(new Meetup(new Knowledge(0, 2)), schedulesMeetup);
+        Activity activity3_2 = new Activity(new Meetup(new Knowledge(0, 2), false), schedulesMeetup);
 
         devPlan3.addActivity(activity3_1);
         devPlan3.addActivity(activity3_2);
@@ -90,9 +90,9 @@ public class Main {
 
 
         Activity activity4_1 = new Activity(new Institution(InstitutionType.University, new Knowledge(1, 2)), schedulesUniversity);
-        Activity activity4_2 = new Activity(new Meetup(new Knowledge(0, 2)), schedulesMeetup);
+        Activity activity4_2 = new Activity(new Meetup(new Knowledge(0, 2), true), schedulesMeetup);
         Activity activity4_3 = new Activity((new SelfEducation( new Knowledge(2, 2))), schedulesSelfEducation);
-        //Activity activity4_4 = new Activity(); ____STUDENT TEACH STUDENT
+        Activity activity4_4 = new Activity(new StudentTeacher(student1, new Knowledge(2, 3)), schedulesSelfEducation);
         Activity activity4_5 = new Activity(new Institution(InstitutionType.Internship, new Knowledge(5, 2)), schedulesInternship);
 
         devPlan4.addActivity(activity4_1);
