@@ -8,13 +8,11 @@ import java.util.List;
 public class Institution implements KnowledgeSource {
 
     private InstitutionType institutionType;
-    private final String name;
     private final Knowledge knowledge;
     private List<Student> students;
 
-    public Institution(InstitutionType institutionType, String name, Knowledge knowledge){
+    public Institution(InstitutionType institutionType, Knowledge knowledge){
         this.institutionType = institutionType;
-        this.name = name;
         this.knowledge = knowledge;
         this.students = new ArrayList<>();
     }

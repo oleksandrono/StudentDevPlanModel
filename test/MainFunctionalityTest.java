@@ -10,7 +10,6 @@ class MainFunctionalityTest {
     void closeCheck__withOneProduct() {
         Student student = new Student("Sasha", new Knowledge(50, 80), 0.9);
 
-
         assertThat(10, is(10));
     }
 }

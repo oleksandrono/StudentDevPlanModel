@@ -4,13 +4,9 @@ import DevPlanModel.Student;
 
 public class Meetup implements KnowledgeSource {
 
-
-    private String name;
     private Knowledge knowledge;
 
-    public Meetup(String name, Knowledge knowledge){
-
-        this.name = name;
+    public Meetup(Knowledge knowledge){
         this.knowledge = knowledge;
     }
 

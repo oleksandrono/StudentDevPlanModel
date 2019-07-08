@@ -21,9 +21,11 @@ public class DevelopmentPlan {
         activities.remove(activity);
     }
 
-    public void perform(Student student) {
-        for(Activity activity : activities){
-            activity.tryToApply(student, LocalDate.now());
+    public void perform(Student student, LocalDate firstDay, LocalDate lastDay) {
+        for(LocalDate date = firstDay; !date.isAfter(lastDay); date = date.plusDays(1)){
+            for(Activity activity : activities){
+                activity.tryToApply(student, date);
+            }
         }
     }
 }
