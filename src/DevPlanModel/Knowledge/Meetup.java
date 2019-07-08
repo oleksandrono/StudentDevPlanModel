@@ -4,18 +4,18 @@ import DevPlanModel.Student;
 
 public class Meetup implements KnowledgeSource {
 
-    private final int theoreticalKnowledge;
-    private final int practicalKnowledge;
 
-    public Meetup(int theoreticalKnowledge, int practicalKnowledge){
+    private String name;
+    private Knowledge knowledge;
 
+    public Meetup(String name, Knowledge knowledge){
 
-        this.theoreticalKnowledge = theoreticalKnowledge;
-        this.practicalKnowledge = practicalKnowledge;
+        this.name = name;
+        this.knowledge = knowledge;
     }
 
     @Override
     public void educate(Student student) {
-
+        student.addKnowledge(knowledge);
     }
 }

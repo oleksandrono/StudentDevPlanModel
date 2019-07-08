@@ -1,6 +1,8 @@
 package DevPlanModel.Schedule;
 
 import java.time.LocalDate;
+import java.time.temporal.WeekFields;
+import java.util.Locale;
 
 public class LastThursdayInMonths implements Schedule {
 
@@ -8,6 +10,8 @@ public class LastThursdayInMonths implements Schedule {
 
     @Override
     public boolean isActive(LocalDate date) {
-        return false;
+        WeekFields weekFields = WeekFields.of(Locale.getDefault());
+        int weekNumber = date.get(weekFields.weekOfMonth());
+        return date.getDayOfWeek().getValue() == 4 && weekNumber == 4;
     }
 }

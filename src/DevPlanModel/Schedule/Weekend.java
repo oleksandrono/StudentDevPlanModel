@@ -7,7 +7,6 @@ public class Weekend implements Schedule {
 
     @Override
     public boolean isActive(LocalDate date) {
-
-        return false;
+        return date.getDayOfWeek().getValue() == 6 || date.getDayOfWeek().getValue() == 7;
     }
 }

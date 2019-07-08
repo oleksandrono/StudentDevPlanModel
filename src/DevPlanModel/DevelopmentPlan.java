@@ -1,7 +1,6 @@
 package DevPlanModel;
 
-import DevPlanModel.Schedule.Period;
-
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +13,7 @@ public class DevelopmentPlan {
         this.student = student;
         this.activities = new ArrayList<>();
     }
-    void addActivity(Activity activity){
+    public void addActivity(Activity activity){
         activities.add(activity);
     }
 
@@ -22,7 +21,9 @@ public class DevelopmentPlan {
         activities.remove(activity);
     }
 
-    void perform(Student student, Period period) {
-
+    public void perform(Student student) {
+        for(Activity activity : activities){
+            activity.tryToApply(student, LocalDate.now());
+        }
     }
 }

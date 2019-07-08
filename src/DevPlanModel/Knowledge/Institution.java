@@ -8,10 +8,14 @@ import java.util.List;
 public class Institution implements KnowledgeSource {
 
     private InstitutionType institutionType;
+    private final String name;
+    private final Knowledge knowledge;
     private List<Student> students;
 
-    public Institution(InstitutionType institutionType){
+    public Institution(InstitutionType institutionType, String name, Knowledge knowledge){
         this.institutionType = institutionType;
+        this.name = name;
+        this.knowledge = knowledge;
         this.students = new ArrayList<>();
     }
 
@@ -19,13 +23,15 @@ public class Institution implements KnowledgeSource {
         students.add(student);
     }
 
+
+    //______________________ not implemented
     @Override
     public void educate(Student student) {
         if(institutionType == InstitutionType.University){
-
+            student.addKnowledge(knowledge);
         }
         else if(institutionType == InstitutionType.Internship){
-
+            student.addKnowledge(knowledge);
         }
     }
 }

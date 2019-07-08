@@ -5,17 +5,16 @@ import java.time.LocalDate;
 public class Period implements Schedule {
 
 
-    private final int firstDay;
-    private final int lastDay;
+    private LocalDate firstDay;
+    private LocalDate lastDay;
 
-    public Period(int firstDay, int lastDay) {
-
+    public Period(LocalDate firstDay, LocalDate lastDay) {
         this.firstDay = firstDay;
         this.lastDay = lastDay;
     }
 
     @Override
     public boolean isActive(LocalDate date) {
-        return false;
+        return !(date.isBefore(firstDay) || date.isAfter(lastDay)) || date.isAfter(lastDay);
     }
 }
