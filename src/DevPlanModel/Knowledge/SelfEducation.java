@@ -13,6 +13,6 @@ public class SelfEducation implements KnowledgeSource {
 
     @Override
     public void educate(Student student) {
-        student.addKnowledge(knowledge);
+        student.learn(knowledge);
     }
 }

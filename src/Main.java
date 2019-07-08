@@ -20,10 +20,10 @@ public class Main {
         ArrayList<Schedule> schedulesUniversity = new ArrayList<>();
         schedulesUniversity.add(new Period(LocalDate.of(2015, 9, 1), LocalDate.of(2020, 5, 30)));
         schedulesUniversity.add(new Workdays());
-        schedulesUniversity.add(new Holidays(LocalDate.of(2016, 6, 1), LocalDate.of(2016, 8, 30)));
-        schedulesUniversity.add(new Holidays(LocalDate.of(2017, 6, 1), LocalDate.of(2017, 8, 30)));
-        schedulesUniversity.add(new Holidays(LocalDate.of(2018, 6, 1), LocalDate.of(2018, 8, 30)));
-        schedulesUniversity.add(new Holidays(LocalDate.of(2019, 6, 1), LocalDate.of(2019, 8, 30)));
+//        schedulesUniversity.add(new Holidays(LocalDate.of(2016, 6, 1), LocalDate.of(2016, 8, 30)));
+//        schedulesUniversity.add(new Holidays(LocalDate.of(2017, 6, 1), LocalDate.of(2017, 8, 30)));
+//        schedulesUniversity.add(new Holidays(LocalDate.of(2018, 6, 1), LocalDate.of(2018, 8, 30)));
+//        schedulesUniversity.add(new Holidays(LocalDate.of(2019, 6, 1), LocalDate.of(2019, 8, 30)));
 
         ArrayList<Schedule> schedulesUniversity2 = new ArrayList<>();
         schedulesUniversity2.add(new Period(LocalDate.of(2020, 9, 1), LocalDate.of(2022, 5, 30)));

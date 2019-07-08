@@ -15,21 +15,20 @@ public class Activity {
         this.schedules = schedules;
     }
 
-    private void connectSchedules(){
-        schedules.forEach(schedule -> {
-
-        });
-    }
 
 
     void tryToApply(Student student, LocalDate date){
-        connectSchedules();
-        schedules.forEach(
-                schedule -> {
-                    if(schedule.isActive(date)){
-                        knowledgeSource.educate(student);
-                    }
-                }
-        );
+        if(dateIsActive(date)){
+            knowledgeSource.educate(student);
+        }
+    }
+
+    private boolean dateIsActive(LocalDate date) {
+        for (Schedule schedule : schedules ) {
+            if(!schedule.isActive(date)){
+                return false;
+            }
+        }
+        return true;
     }
 }

@@ -37,15 +37,18 @@ public class Student {
 
     public void useDevPlan(){
         //some check
-        // addKnowledge();
+        // learn();
     }
 
 
     public Knowledge getKnowledge(){
-        return this.knowledge;
+        double summaryPracticalKnowledge = (double) this.knowledge.practicalKnowledge *  learningRatio;
+        double summaryTheoreticalKnowledge = (double) this.knowledge.theoreticalKnowledge * learningRatio;
+        Knowledge summaryKnowledge = new Knowledge((int) summaryPracticalKnowledge, (int) summaryTheoreticalKnowledge);
+        return summaryKnowledge;
     }
 
-    public void addKnowledge(Knowledge knowledge){
+    public void learn(Knowledge knowledge){
         this.knowledge.practicalKnowledge += knowledge.practicalKnowledge;
         this.knowledge.theoreticalKnowledge += knowledge.theoreticalKnowledge;
     }
