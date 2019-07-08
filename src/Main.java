@@ -38,15 +38,22 @@ public class Main {
         schedulesSelfEducation.add(new Weekend());
 
         ArrayList<Schedule> schedulesInternship = new ArrayList<>();
-        schedulesInternship.add(new Period(LocalDate.of(2019, 7, 1), LocalDate.of(2019, 10,1)));
+        schedulesInternship.add(new Period(LocalDate.of(2019, 7, 1), LocalDate.of(2019, 10, 1)));
         schedulesInternship.add(new Workdays());
-
 
 
         //student 1 - pacifist
         DevelopmentPlan devPlan1 = new DevelopmentPlan(student1);
-        Activity activity1_1 = new Activity(new Institution(InstitutionType.University,  new Knowledge(1, 2)), schedulesUniversity);
-        Activity activity1_2 = new Activity(new Institution(InstitutionType.University, new Knowledge(1, 2)), schedulesUniversity2);
+
+        Institution university1 = new Institution(InstitutionType.University, new Knowledge(1, 2));
+        Institution university2 = new Institution(InstitutionType.University, new Knowledge(1, 2));
+
+        university1.enroll(student1);
+        university2.enroll(student1);
+
+        Activity activity1_1 = new Activity(university1, schedulesUniversity);
+        Activity activity1_2 = new Activity(university2, schedulesUniversity2);
+
         devPlan1.addActivity(activity1_1);
         devPlan1.addActivity(activity1_2);
         devPlan1.perform(student1, LocalDate.of(2015, 1, 1), LocalDate.of(2022, 12, 1));
@@ -72,7 +79,9 @@ public class Main {
         //student 3 - "Teach me completely"
 
         DevelopmentPlan devPlan3 = new DevelopmentPlan(student3);
-        Activity activity3_1 = new Activity(new Institution(InstitutionType.University, new Knowledge(2, 3)), schedulesUniversity);
+        Institution university3 = new Institution(InstitutionType.University, new Knowledge(2, 3));
+        university3.enroll(student3);
+        Activity activity3_1 = new Activity(university3, schedulesUniversity);
         Activity activity3_2 = new Activity(new Meetup(new Knowledge(0, 2), false), schedulesMeetup);
 
         devPlan3.addActivity(activity3_1);
@@ -91,13 +100,14 @@ public class Main {
 
         Activity activity4_1 = new Activity(new Institution(InstitutionType.University, new Knowledge(1, 2)), schedulesUniversity);
         Activity activity4_2 = new Activity(new Meetup(new Knowledge(0, 2), true), schedulesMeetup);
-        Activity activity4_3 = new Activity((new SelfEducation( new Knowledge(2, 2))), schedulesSelfEducation);
+        Activity activity4_3 = new Activity((new SelfEducation(new Knowledge(2, 2))), schedulesSelfEducation);
         Activity activity4_4 = new Activity(new StudentTeacher(student1, new Knowledge(2, 3)), schedulesSelfEducation);
         Activity activity4_5 = new Activity(new Institution(InstitutionType.Internship, new Knowledge(5, 2)), schedulesInternship);
 
         devPlan4.addActivity(activity4_1);
         devPlan4.addActivity(activity4_2);
         devPlan4.addActivity(activity4_3);
+        devPlan4.addActivity(activity4_4);
         devPlan4.addActivity(activity4_5);
         devPlan4.perform(student4, LocalDate.of(2015, 1, 1), LocalDate.of(2020, 12, 1));
 

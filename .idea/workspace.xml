@@ -2,21 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2c6aede-d2be-41ca-bbbe-0298b7bffe49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DevPlanModel/Knowledge/StudentTeacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DevPlanModel/Schedule/CompositeSchedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudentDevPlanModel/DevPlanModel/Knowledge/Institution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudentDevPlanModel/DevPlanModel/Knowledge/Institution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudentDevPlanModel/DevPlanModel/Knowledge/Meetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudentDevPlanModel/DevPlanModel/Knowledge/Meetup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudentDevPlanModel/DevPlanModel/Schedule/Holidays.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudentDevPlanModel/DevPlanModel/Schedule/Holidays.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudentDevPlanModel/DevPlanModel/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudentDevPlanModel/DevPlanModel/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudentDevPlanModel/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudentDevPlanModel/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/StudentDevPlanModel/MainFunctionalityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/StudentDevPlanModel/MainFunctionalityTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevPlanModel/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevPlanModel/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevPlanModel/Knowledge/Institution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevPlanModel/Knowledge/Institution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevPlanModel/Knowledge/Meetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevPlanModel/Knowledge/Meetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevPlanModel/Schedule/Holidays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevPlanModel/Schedule/Holidays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevPlanModel/Schedule/LastThursdayInMonths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevPlanModel/Schedule/LastThursdayInMonths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevPlanModel/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevPlanModel/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/MainFunctionalityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MainFunctionalityTest.java" afterDir="false" />
     </list>
@@ -63,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+            <state relative-caret-position="603">
+              <caret line="87" column="42" lean-forward="true" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,10 +60,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/MainFunctionalityTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="117" column="71" selection-start-line="117" selection-start-column="71" selection-end-line="117" selection-end-column="71" />
+            <state relative-caret-position="346">
+              <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DevPlanModel/Knowledge/Institution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DevPlanModel/DevelopmentPlan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,9 +158,9 @@
         <option value="$PROJECT_DIR$/src/DevPlanModel/Knowledge/Meetup.java" />
         <option value="$PROJECT_DIR$/src/DevPlanModel/Schedule/Holidays.java" />
         <option value="$PROJECT_DIR$/src/DevPlanModel/Knowledge/StudentTeacher.java" />
-        <option value="$PROJECT_DIR$/test/MainFunctionalityTest.java" />
         <option value="$PROJECT_DIR$/src/DevPlanModel/Schedule/CompositeSchedule.java" />
         <option value="$PROJECT_DIR$/src/DevPlanModel/Activity.java" />
+        <option value="$PROJECT_DIR$/test/MainFunctionalityTest.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -256,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.MainFunctionalityTest">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="StudentDevPlanModel" />
@@ -298,15 +311,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainFunctionalityTest - 2019.07.08 at 15h 03m 17s.xml">
-      <configuration name="MainFunctionalityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainFunctionalityTest - 2019.07.08 at 15h 03m 19s.xml">
-      <configuration name="MainFunctionalityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainFunctionalityTest - 2019.07.08 at 15h 03m 35s.xml">
-      <configuration name="MainFunctionalityTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainFunctionalityTest - 2019.07.08 at 15h 17m 46s.xml">
       <configuration name="MainFunctionalityTest" configurationId="JUnit" />
     </history-entry>
@@ -328,9 +332,18 @@
     <history-entry file="MainFunctionalityTest - 2019.07.08 at 15h 46m 28s.xml">
       <configuration name="MainFunctionalityTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainFunctionalityTest - 2019.07.08 at 15h 57m 26s.xml">
+      <configuration name="MainFunctionalityTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainFunctionalityTest - 2019.07.08 at 15h 57m 43s.xml">
+      <configuration name="MainFunctionalityTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainFunctionalityTest - 2019.07.08 at 15h 59m 33s.xml">
+      <configuration name="MainFunctionalityTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37176000" />
+    <option name="totallyTimeSpent" value="38177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1333" height="1025" extended-state="6" />
@@ -341,7 +354,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18181819" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18181819" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32924107" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32924107" />
@@ -351,7 +364,7 @@
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32924107" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.1875" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.20758928" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39955357" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -466,17 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DevPlanModel/DevelopmentPlan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DevPlanModel/Schedule/LastThursdayInMonths.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -501,18 +503,6 @@
             <element signature="e#840#841#0" expanded="true" />
             <element signature="e#951#952#0" expanded="true" />
             <element signature="e#980#981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DevPlanModel/Knowledge/Institution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -560,16 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/MainFunctionalityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="117" column="71" selection-start-line="117" selection-start-column="71" selection-end-line="117" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DevPlanModel/Knowledge/KnowledgeSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -598,10 +578,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DevPlanModel/Knowledge/Institution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DevPlanModel/DevelopmentPlan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/MainFunctionalityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+        <state relative-caret-position="603">
+          <caret line="87" column="42" lean-forward="true" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -11,21 +11,20 @@ public class Institution implements KnowledgeSource {
     private final Knowledge knowledge;
     private List<Student> students;
 
-    public Institution(InstitutionType institutionType, Knowledge knowledge){
+    public Institution(InstitutionType institutionType, Knowledge knowledge) {
         this.institutionType = institutionType;
         this.knowledge = knowledge;
         this.students = new ArrayList<>();
     }
 
-    public void enroll(Student student){
+    public void enroll(Student student) {
         students.add(student);
     }
 
 
-    //______________________ not implemented
     @Override
     public void educate(Student student) {
-        if(students.contains(student)) {
+        if (students.contains(student)) {
             if (institutionType == InstitutionType.University) {
                 student.learn(knowledge);
             } else if (institutionType == InstitutionType.Internship) {

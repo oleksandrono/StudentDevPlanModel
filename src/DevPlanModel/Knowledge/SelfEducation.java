@@ -7,7 +7,7 @@ public class SelfEducation implements KnowledgeSource {
 
     private final Knowledge knowledge;
 
-    public SelfEducation(Knowledge knowledge){
+    public SelfEducation(Knowledge knowledge) {
         this.knowledge = knowledge;
     }
 

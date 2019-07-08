@@ -16,7 +16,7 @@ public class Student {
     private List<Schedule> schedules = new ArrayList<>();
     private DevelopmentPlan devPlan;
 
-    public Student(String name, Knowledge knowledge, double learningRatio, boolean laptop){
+    public Student(String name, Knowledge knowledge, double learningRatio, boolean laptop) {
         this.name = name;
         this.knowledge = knowledge;
         this.learningRatio = learningRatio;
@@ -24,33 +24,31 @@ public class Student {
     }
 
 
-
-    public void addSchedule(Schedule schedule){
+    public void addSchedule(Schedule schedule) {
         schedules.add(schedule);
     }
 
-    public List<Schedule> getSchedules(){
+    public List<Schedule> getSchedules() {
         return schedules;
     }
 
-    public void addDevPlan(DevelopmentPlan devPlan){
-        this.devPlan=devPlan;
+    public void addDevPlan(DevelopmentPlan devPlan) {
+        this.devPlan = devPlan;
     }
 
-    public boolean hasLaptop(){
+    public boolean hasLaptop() {
         return laptop;
     }
 
 
-
-    public Knowledge getKnowledge(){
-        double summaryPracticalKnowledge = (double) this.knowledge.practicalKnowledge *  learningRatio;
+    public Knowledge getKnowledge() {
+        double summaryPracticalKnowledge = (double) this.knowledge.practicalKnowledge * learningRatio;
         double summaryTheoreticalKnowledge = (double) this.knowledge.theoreticalKnowledge * learningRatio;
         Knowledge summaryKnowledge = new Knowledge((int) summaryPracticalKnowledge, (int) summaryTheoreticalKnowledge);
         return summaryKnowledge;
     }
 
-    public void learn(Knowledge knowledge){
+    public void learn(Knowledge knowledge) {
         this.knowledge.practicalKnowledge += knowledge.practicalKnowledge;
         this.knowledge.theoreticalKnowledge += knowledge.theoreticalKnowledge;
     }

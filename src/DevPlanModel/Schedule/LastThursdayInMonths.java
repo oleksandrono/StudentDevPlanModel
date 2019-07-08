@@ -7,7 +7,6 @@ import java.util.Locale;
 public class LastThursdayInMonths implements Schedule {
 
 
-
     @Override
     public boolean isActive(LocalDate date) {
         WeekFields weekFields = WeekFields.of(Locale.getDefault());

@@ -12,20 +12,19 @@ public class Activity {
     private ArrayList<Schedule> schedules;
     private Schedule schedule;
 
-    public Activity(KnowledgeSource knowledgeSource, ArrayList<Schedule> schedules){
+    public Activity(KnowledgeSource knowledgeSource, ArrayList<Schedule> schedules) {
         this.knowledgeSource = knowledgeSource;
         this.schedules = schedules;
 
         this.schedule = schedules.get(0);
-        for(int i = 1; i<schedules.size(); i++){
+        for (int i = 1; i < schedules.size(); i++) {
             this.schedule = new CompositeSchedule(this.schedule, schedules.get(i));
         }
     }
 
 
-
-    void tryToApply(Student student, LocalDate date){
-        if(schedule.isActive(date)){
+    void tryToApply(Student student, LocalDate date) {
+        if (schedule.isActive(date)) {
             knowledgeSource.educate(student);
         }
     }
