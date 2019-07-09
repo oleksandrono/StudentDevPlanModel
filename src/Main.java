@@ -45,8 +45,8 @@ public class Main {
         //student 1 - pacifist
         DevelopmentPlan devPlan1 = new DevelopmentPlan(student1);
 
-        Institution university1 = new Institution(InstitutionType.University, new Knowledge(1, 2));
-        Institution university2 = new Institution(InstitutionType.University, new Knowledge(1, 2));
+        Institution university1 = new Institution("University1", new Knowledge(1, 2));
+        Institution university2 = new Institution("University2", new Knowledge(1, 2));
 
         university1.enroll(student1);
         university2.enroll(student1);
@@ -65,7 +65,7 @@ public class Main {
         DevelopmentPlan devPlan2 = new DevelopmentPlan(student2);
         Activity activity2_1 = new Activity((new Meetup(new Knowledge(0, 2), true)), schedulesMeetup);
         Activity activity2_2 = new Activity(new SelfEducation(new Knowledge(2, 2)), schedulesSelfEducation);
-        Activity activity2_3 = new Activity(new Institution(InstitutionType.Internship, new Knowledge(5, 2)), schedulesInternship);
+        Activity activity2_3 = new Activity(new Institution("Internship", new Knowledge(5, 2)), schedulesInternship);
 
         devPlan2.addActivity(activity2_1);
         devPlan2.addActivity(activity2_2);
@@ -79,7 +79,7 @@ public class Main {
         //student 3 - "Teach me completely"
 
         DevelopmentPlan devPlan3 = new DevelopmentPlan(student3);
-        Institution university3 = new Institution(InstitutionType.University, new Knowledge(2, 3));
+        Institution university3 = new Institution("University", new Knowledge(2, 3));
         university3.enroll(student3);
         Activity activity3_1 = new Activity(university3, schedulesUniversity);
         Activity activity3_2 = new Activity(new Meetup(new Knowledge(0, 2), false), schedulesMeetup);
@@ -98,11 +98,11 @@ public class Main {
         DevelopmentPlan devPlan4 = new DevelopmentPlan(student4);
 
 
-        Activity activity4_1 = new Activity(new Institution(InstitutionType.University, new Knowledge(1, 2)), schedulesUniversity);
+        Activity activity4_1 = new Activity(new Institution("University", new Knowledge(1, 2)), schedulesUniversity);
         Activity activity4_2 = new Activity(new Meetup(new Knowledge(0, 2), true), schedulesMeetup);
         Activity activity4_3 = new Activity((new SelfEducation(new Knowledge(2, 2))), schedulesSelfEducation);
         Activity activity4_4 = new Activity(new StudentTeacher(student1, new Knowledge(2, 3)), schedulesSelfEducation);
-        Activity activity4_5 = new Activity(new Institution(InstitutionType.Internship, new Knowledge(5, 2)), schedulesInternship);
+        Activity activity4_5 = new Activity(new Institution("Internship", new Knowledge(5, 2)), schedulesInternship);
 
         devPlan4.addActivity(activity4_1);
         devPlan4.addActivity(activity4_2);

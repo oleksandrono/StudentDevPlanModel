@@ -22,6 +22,9 @@ public class Activity {
         }
     }
 
+    public ArrayList<Schedule> getSchedules() {
+        return schedules;
+    }
 
     void tryToApply(Student student, LocalDate date) {
         if (schedule.isActive(date)) {

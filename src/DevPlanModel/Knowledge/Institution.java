@@ -7,12 +7,13 @@ import java.util.List;
 
 public class Institution implements KnowledgeSource {
 
-    private InstitutionType institutionType;
+
+    private String name;
     private final Knowledge knowledge;
     private List<Student> students;
 
-    public Institution(InstitutionType institutionType, Knowledge knowledge) {
-        this.institutionType = institutionType;
+    public Institution(String name, Knowledge knowledge) {
+        this.name = name;
         this.knowledge = knowledge;
         this.students = new ArrayList<>();
     }
@@ -25,11 +26,7 @@ public class Institution implements KnowledgeSource {
     @Override
     public void educate(Student student) {
         if (students.contains(student)) {
-            if (institutionType == InstitutionType.University) {
-                student.learn(knowledge);
-            } else if (institutionType == InstitutionType.Internship) {
-                student.learn(knowledge);
-            }
+            student.learn(knowledge);
         }
     }
 }

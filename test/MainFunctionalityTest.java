@@ -47,7 +47,7 @@ class MainFunctionalityTest {
         schedulesInternship.add(new Period(LocalDate.of(2019, 7, 1), LocalDate.of(2019, 7, 30)));
         schedulesInternship.add(new Workdays());
 
-        Institution internship = new Institution(InstitutionType.Internship, new Knowledge(3, 1));
+        Institution internship = new Institution("Internship", new Knowledge(3, 1));
         Activity activity = new Activity(internship, schedulesInternship);
         internship.enroll(student);
         devPlan.addActivity(activity);
@@ -64,7 +64,7 @@ class MainFunctionalityTest {
         schedulesUniversity.add(new Holidays(LocalDate.of(2019, 7, 1), LocalDate.of(2019, 7, 14)));
         schedulesUniversity.add(new Holidays(LocalDate.of(2019, 7, 14), LocalDate.of(2019, 7, 31)));
 
-        Institution university = new Institution(InstitutionType.University, new Knowledge(1, 2));
+        Institution university = new Institution("University", new Knowledge(1, 2));
         Activity activity = new Activity(university, schedulesUniversity);
         university.enroll(student);
 
