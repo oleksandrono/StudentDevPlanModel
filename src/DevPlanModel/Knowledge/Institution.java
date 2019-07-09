@@ -7,13 +7,10 @@ import java.util.List;
 
 public class Institution implements KnowledgeSource {
 
-
-    private String name;
     private final Knowledge knowledge;
     private List<Student> students;
 
-    public Institution(String name, Knowledge knowledge) {
-        this.name = name;
+    public Institution(Knowledge knowledge) {
         this.knowledge = knowledge;
         this.students = new ArrayList<>();
     }
@@ -21,7 +18,6 @@ public class Institution implements KnowledgeSource {
     public void enroll(Student student) {
         students.add(student);
     }
-
 
     @Override
     public void educate(Student student) {
